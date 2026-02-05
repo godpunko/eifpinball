@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2466a370137313f499b1d67d45bfd2c9
+guid: d8542d83dc88b41499aab281c2638d09
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4856872790349125329
-    second: soul_0
+      213: -6907860675116281496
+    second: soulblue_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: soul_0
+      name: soulblue_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f29eaf31eebe89cb0800000000000000
-      internalID: -4856872790349125329
+      spriteID: 861ddcdb0595220a0800000000000000
+      internalID: -6907860675116281496
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      soul_0: -4856872790349125329
+      soulblue_0: -6907860675116281496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
