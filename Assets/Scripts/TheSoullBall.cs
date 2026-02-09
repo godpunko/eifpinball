@@ -6,6 +6,7 @@ public class TheSoullBall : MonoBehaviour
     public float soulMaxHP = 20.0f;
     public float soulHP = 20.0f;
     private float HPLastFrame;
+    public float score;
 
     void Start()
     {
@@ -24,13 +25,6 @@ public class TheSoullBall : MonoBehaviour
 
             HPLastFrame = soulHP;
             GetComponent<AudioSource>().Play();
-
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-
-            soulHP = soulHP - 5;
 
         }
 
