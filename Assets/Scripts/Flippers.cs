@@ -6,6 +6,7 @@ public class Flippers : MonoBehaviour
     private HingeJoint2D joint;
     private JointMotor2D motor;
     [SerializeField] private float motorSpeed = 1.0f;
+    [SerializeField] private KeyCode control;
 
     private void Start()
     {
@@ -20,7 +21,7 @@ public class Flippers : MonoBehaviour
     private void PlayerInput()
     {
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(control))
         {
 
             motor.motorSpeed = motorSpeed;
