@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 58d0f5e81047a964a81a7351cbab46be
+guid: 6b01f6ac9f1183341a3b8dfbdbb400b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -563904126069427221
-    second: mercybutt_0
+      213: 7553835203902197830
+    second: bone_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mercybutt_0
+      name: bone_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 110
-        height: 42
+        width: 10
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be3314e5f2c9c28f0800000000000000
-      internalID: -563904126069427221
+      spriteID: 6405e64981d94d860800000000000000
+      internalID: 7553835203902197830
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mercybutt_0: -563904126069427221
+      bone_0: 7553835203902197830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
