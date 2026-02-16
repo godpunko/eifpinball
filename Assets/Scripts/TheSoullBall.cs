@@ -43,8 +43,10 @@ public class TheSoullBall : MonoBehaviour
         if(HPLastFrame != soulHP)
         {
 
+            if (soulHP < HPLastFrame && soulHP != soulMaxHP) { GetComponent<AudioSource>().Play(); }
+
             HPLastFrame = soulHP;
-            GetComponent<AudioSource>().Play();
+
 
         }
 
