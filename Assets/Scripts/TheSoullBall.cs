@@ -40,7 +40,7 @@ public class TheSoullBall : MonoBehaviour
     {
 
         //taken damage
-        if(HPLastFrame < soulHP)
+        if(HPLastFrame != soulHP)
         {
 
             HPLastFrame = soulHP;
