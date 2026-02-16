@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TheSoullBall : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class TheSoullBall : MonoBehaviour
     public float pacscore = 0f;
     public float genscore = 0f;
 
+    [SerializeField] private AudioClip deathClip;
+    [SerializeField] private Sprite deathSprite;
+    public bool died = false;
+
     void Start()
     {
         
@@ -18,11 +23,24 @@ public class TheSoullBall : MonoBehaviour
 
     }
 
+    void PlayerInput()
+    {
+
+        if(died && Input.GetKeyDown(KeyCode.Tab))
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        }
+
+
+    }
+
     void Update()
     {
 
         //taken damage
-        if(HPLastFrame != soulHP)
+        if(HPLastFrame < soulHP)
         {
 
             HPLastFrame = soulHP;
@@ -30,11 +48,29 @@ public class TheSoullBall : MonoBehaviour
 
         }
 
-        if (soulHP <= 0) { 
+        if (soulHP <= 0) {
+
+            if (!died)
+            {
+                soulHP = 0;
+                GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+                GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
+                GetComponent<AudioSource>().clip = deathClip;
+                GetComponent<SpriteRenderer>().sprite = deathSprite;
+                GetComponent<AudioSource>().Play();
+                died = true;
+            }
             
-            soulHP = 0; 
+
         
+        } else if (soulHP > soulMaxHP)
+        {
+
+            soulHP = soulMaxHP;
+
         }
+
+        PlayerInput();
         
     }
 }
