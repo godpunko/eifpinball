@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class FightButton : MonoBehaviour
@@ -8,6 +9,7 @@ public class FightButton : MonoBehaviour
     [SerializeField] GameObject targetSoul;
     [SerializeField] float pointsDealt = 100f;
     [SerializeField] float healsFor = 0f;
+    [SerializeField] Sprite[] buttSprites;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,8 +39,16 @@ public class FightButton : MonoBehaviour
             GetComponent<AudioSource>().Play();
 
         }
-        
-        
+
+        GetComponent<SpriteRenderer>().sprite = buttSprites[1];
+
+    }
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+
+        GetComponent<SpriteRenderer>().sprite = buttSprites[0];
 
     }
 

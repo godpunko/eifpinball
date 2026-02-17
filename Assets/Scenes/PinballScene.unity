@@ -1024,6 +1024,9 @@ MonoBehaviour:
   targetSoul: {fileID: 1976134704}
   pointsDealt: 0
   healsFor: 3
+  buttSprites:
+  - {fileID: -563904126069427221, guid: 58d0f5e81047a964a81a7351cbab46be, type: 3}
+  - {fileID: 8868474031943544670, guid: 9ae3d8344c92b334d8d50d875e38e840, type: 3}
 --- !u!82 &158250931
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8173,6 +8176,9 @@ MonoBehaviour:
   targetSoul: {fileID: 1976134704}
   pointsDealt: 175
   healsFor: 0
+  buttSprites:
+  - {fileID: 7772260508654764996, guid: cfc1f50a8b2023c4f878e82ccf0c6165, type: 3}
+  - {fileID: 1479179671290093742, guid: 67be42050fa873045ad9d3aa81330011, type: 3}
 --- !u!61 &2118502430
 BoxCollider2D:
   m_ObjectHideFlags: 0
